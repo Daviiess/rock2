@@ -46,9 +46,9 @@ background-color: grey;
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
-    <button onclick="playGame('rock') " class="icon"> <img src="images/rock-emoji.png" alt="" class="img-icon"></button>
-    <button onclick="playGame('paper')" class="icon"> <img src="images/paper-emoji.png" alt="" class="img-icon"></button>
-    <button onclick="playGame('scissors')" class="icon"> <img src="images/scissors-emoji.png" alt="" class="img-icon"></button>
+    <button onclick="playGame('rock') " class="icon"> <img src="rock-emoji.png" alt="" class="img-icon"></button>
+    <button onclick="playGame('paper')" class="icon"> <img src="paper-emoji.png" alt="" class="img-icon"></button>
+    <button onclick="playGame('scissors')" class="icon"> <img src="scissors-emoji.png" alt="" class="img-icon"></button>
 
     <div>
 
@@ -106,7 +106,7 @@ Ties: ${score.tie}
 
 `);
 const display = document.querySelector('.js-display-move').innerHTML = `
-You: <img src="images/${move}-emoji.png" alt="" class="img-icon">, Computer: <img src="images/${computerMove}-emoji.png" alt="" class="img-icon">
+You: <img src="${move}-emoji.png" alt="" class="img-icon">, Computer: <img src="${computerMove}-emoji.png" alt="" class="img-icon">
 `
  document.querySelector('.js-display-result').innerHTML = `${result.toUpperCase()}`;
 
